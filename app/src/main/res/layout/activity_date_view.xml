@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DateView">
+
+    <Button
+        android:id="@+id/button_home_in_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="HOME" />
+
+    <Button
+        android:id="@+id/button_date_in_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/button_home_in_date"
+        android:text="DATE" />
+
+    <Button
+        android:id="@+id/button_face_check_in_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/button_date_in_date"
+        android:text="FACE CHECK" />
+
+    <LinearLayout
+        android:id="@+id/used_line1_in_date"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/button_home_in_date"
+        android:layout_marginTop="5dp"
+        android:background="#00FF00"
+        android:orientation="horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_in_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/used_line1_in_date" />
+
+</RelativeLayout>
